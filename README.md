@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hameedafr/Balancing-Security-and-Privacy-in-SIEM-logs/main/dashboard_siem.png" alt="SIEM Dashboard" width="100%">
+</p>
+
 # 🔐 Balancing Security and Privacy in SIEM Logs
 
 A Final Year Project implementing a privacy-preserving and secure SIEM pipeline using the **ELK Stack (Elasticsearch, Logstash, Kibana)** and **Filebeat**. The system is designed to ensure compliance with privacy laws (GDPR, CCPA) while maintaining log utility for real-time threat detection.
