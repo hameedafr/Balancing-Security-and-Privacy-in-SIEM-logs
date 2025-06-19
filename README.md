@@ -54,14 +54,15 @@ filter {
     replace => { "ip" => "[REDACTED]" }
   }
 }
-### 3. **Secure Communication**
+
+3. Secure Communication
 Enable TLS in logstash.conf and elasticsearch.yml
 
 Use certutil to generate self-signed certificates
 
 Add http_ca.crt and validate trust between components
 
-### 4. **Install Filebeat on Agent Machine**
+4. Install Filebeat on Agent Machine
 
 curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.18.1-amd64.deb
 sudo dpkg -i filebeat-8.18.1-amd64.deb
@@ -72,7 +73,7 @@ output.logstash:
   ssl.enabled: true
   ssl.certificate_authorities: ["/etc/filebeat/certs/logstash-ca.crt"]
 
-### 🛡️** Key Features**
+🛡️ Key Features
 🔐 TLS-Encrypted Pipelines
 
 🔁 SHA-256 Tokenization of IPs/Usernames
@@ -83,16 +84,16 @@ output.logstash:
 
 ⚙️ Modular Logstash Filters for Custom Privacy Rules
 
-### 📈 **Future Scope**
+📈 Future Scope
 🔄 Integration with SOAR tools
 
 🧠 Add AI-based Anomaly Detection
 
 💼 Extendable to healthcare, finance, and government sectors
 
-### 📬 **Contact**
+📬 Contact
 Hameed Ullah
 🔗 LinkedIn: (https://www.linkedin.com/in/hameedullahafridi/)
 
-###❓ **Questions?**
+❓ Questions?
 Feel free to raise issues or start a discussion in the repository!
